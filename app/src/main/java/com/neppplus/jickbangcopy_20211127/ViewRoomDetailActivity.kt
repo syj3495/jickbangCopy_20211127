@@ -10,6 +10,21 @@ class ViewRoomDetailActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_view_room_detail)
 
+        setupEvent()
+        setValues()
+
+
+
+    }
+
+    fun setupEvent(){
+
+
+
+
+    }
+
+    fun setValues(){
 
         val roomData = intent.getSerializableExtra("room") as RoomData
 
