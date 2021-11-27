@@ -20,11 +20,16 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="8000가격"/>
+            android:textSize="23sp"
+            android:text="8000가격"
+            android:textStyle="bold"
+            android:textColor="#FFA509"
+            />
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:textColor="@color/black"
             android:text="서울시 동대문구 , 1층(동네/층수)"/>
 
         <TextView
