@@ -10,15 +10,27 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.JickbangCopy_20211127">
         <activity
-            android:name=".ViewRoomDetailActivity"
+            android:name=".splashActivity"
+            android:theme="@style/Theme.AppCompat.DayNight.NoActionBar"
+            android:exported="true" >
+            <action android:name="android.intent.action.MAIN" />
+
+            <category android:name="android.intent.category.LAUNCHER" />
+
+
+        </activity>
+        <activity
+            android:name=".SplachActivity"
             android:exported="true" />
+        <activity
+            android:name=".ViewRoomDetailActivity"
+            android:exported="true"
+            android:theme="@style/Theme.AppCompat.DayNight.NoActionBar" />
         <activity
             android:name=".MainActivity"
             android:exported="true">
             <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
 
-                <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
     </application>
