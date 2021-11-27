@@ -8,8 +8,10 @@ import com.neppplus.jickbangcopy_20211127.datas.RoomData
 import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : AppCompatActivity() {
-
+//    방 목록을 담기위한 그릇
     val mRoomlist = ArrayList<RoomData>()
+
+//    변수는 멤버변수로 -> 대입은 Oncreate(){}
     lateinit var mRoomAdapter : RoomAdapter
 
     override fun onCreate(savedInstanceState: Bundle?) {
