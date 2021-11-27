@@ -36,8 +36,6 @@ class RoomData(
             return "${uk}억${str}"
 
 
-
-
         }
 
 
