@@ -22,13 +22,21 @@ class RoomData(
 
             return NumberFormat.getNumberInstance(Locale.KOREA).format(this.price)
 
-
-
-
-
         }else{
 
-            return "1억이상"
+//            return "1억이상"
+//            175300 -> 17억 5,300
+
+            val uk = this.price / 10000 //Int나누기 Int하면 결과도 Int로 나누고 소수점 버림 => 억단위 추출
+
+            val rest = this.price % 10000 // 나머지 구하기 => 천만원단위
+            val str = NumberFormat.getNumberInstance(Locale.KOREA).format(rest)
+
+
+            return "${uk}억${str}"
+
+
+
 
         }
 
