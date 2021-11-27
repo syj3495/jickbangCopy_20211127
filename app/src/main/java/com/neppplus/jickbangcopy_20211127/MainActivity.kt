@@ -17,7 +17,7 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
-
+//      실제 방 데이터들 추가
         mRoomlist.add( RoomData( 8000,"서울시 동대문구",5,"1번째 방입니다."))
         mRoomlist.add( RoomData( 18000,"서울시 서대문구",15,"2번째 방입니다."))
         mRoomlist.add( RoomData( 7000,"서울시 동대문구",4,"3번째 방입니다."))
